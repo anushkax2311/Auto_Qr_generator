@@ -1,0 +1,158 @@
+.subscribe-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub-glow {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(192,132,252,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 720px;
+  width: 100%;
+  animation: fadeUp 0.4s ease both;
+}
+
+.sub-badge {
+  background: rgba(124,92,252,0.12);
+  border: 1px solid rgba(124,92,252,0.2);
+  color: var(--accent2);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+.sub-title {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.sub-desc {
+  font-size: 15px;
+  color: var(--muted2);
+  text-align: center;
+}
+
+.plans-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-plan-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 32px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.sub-plan-card.highlight {
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(124,92,252,0.15);
+}
+
+.plan-badge-top {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.plan-top { display: flex; flex-direction: column; gap: 6px; }
+
+.plan-name-lg {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.plan-price-lg {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.plan-price-lg span {
+  font-size: 15px;
+  color: var(--muted);
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.plan-desc-sm { font-size: 13px; color: var(--muted); }
+
+.plan-feats {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.plan-feats li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted2);
+}
+
+.current-plan-badge {
+  background: rgba(34,211,165,0.1);
+  border: 1px solid rgba(34,211,165,0.2);
+  color: var(--green);
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sub-notes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  font-size: 13px;
+  color: var(--muted2);
+}
